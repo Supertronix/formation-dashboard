@@ -14,10 +14,39 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class RobotControleur extends IterativeRobot {
 
-	public class CommandeImmobile extends CommandGroup { }
-	public class CommandeTrajetR1 extends CommandGroup { }
-	public class CommandeTrajetR2 extends CommandGroup { }
-	public class CommandeTrajetR3 extends CommandGroup { }
+	public class CommandeImmobile extends CommandGroup 
+	{ 	 
+		@Override
+		protected void initialize() 
+		{
+			System.out.println("Commande immobile");
+		}
+	}
+	public class CommandeTrajetR1 extends CommandGroup 
+	{ 
+		@Override
+		protected void initialize() 
+		{
+			System.out.println("Commande Trajet R1");
+		}
+	}
+	public class CommandeTrajetR2 extends CommandGroup 
+	{
+		@Override
+		protected void initialize() 
+		{
+			System.out.println("Commande Trajet R2");
+		}
+	}
+	public class CommandeTrajetR3 extends CommandGroup 
+	{ 
+		@Override
+		protected void initialize() 
+		{
+			System.out.println("Commande Trajet R3");
+		}
+	}
+	
 	public class CommandeTrajetB1 extends CommandGroup { }
 	public class CommandeTrajetB2 extends CommandGroup { }
 	public class CommandeTrajetB3 extends CommandGroup { }
